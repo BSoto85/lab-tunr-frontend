@@ -16,7 +16,7 @@ const Songs = () => {
   }, []);
 
   return (
-    <div>
+    <div className="container">
       {songs &&
         songs.map((song) => {
           return <Song key={song.id} song={song} />;

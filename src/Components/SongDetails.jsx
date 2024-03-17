@@ -26,7 +26,7 @@ const SongDetails = () => {
   }, [id]);
 
   return (
-    <div>
+    <div className="song-card-detail">
       <p>
         {song.is_favorite ? (
           <span>⭐️</span>

@@ -4,7 +4,7 @@ const Song = ({ song }) => {
   const { id, name, artist, genre, song_duration, is_favorite } = song;
 
   return (
-    <div>
+    <div className="song-card">
       <p>
         {is_favorite ? <span>⭐️</span> : <span>&nbsp; &nbsp; &nbsp;</span>}{" "}
         Name: {name}

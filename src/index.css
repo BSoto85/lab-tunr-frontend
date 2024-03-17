@@ -2,4 +2,133 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  background: url("https://img.freepik.com/free-vector/musical-pentagram-sound-waves-notes-background_1017-33911.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1710633600&semt=ais");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rebeccapurple;
+  padding: 15px;
+  text-align: right;
+}
+
+nav h1 {
+  color: black;
+  font-size: xx-large;
+  color: aquamarine;
+}
+
+button:hover {
+  background-color: lightpink;
+}
+
+form {
+  margin: 0 auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: 2px solid black;
+  width: 500px;
+  background-color: lightblue;
+  text-align: left;
+  gap: 5px;
+  padding-top: 10px;
+  padding-left: 20px;
+  border-radius: 15px;
+}
+
+input {
+  margin-left: 5px;
+  border-radius: 7px;
+  text-align: center;
+}
+
+form button {
+  width: fit-content;
+  height: fit-content;
+  padding: 3px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-but {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  text-align: center;
+  margin: 10px;
+  margin-top: 30px;
+}
+
+.song-card,
+.song-card-detail {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: lightblue;
+  padding: 5px;
+}
+
+.song-card button {
+  padding: 3px;
+  border-radius: 10px;
+}
+
+.song-card-detail {
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  width: 350px;
+}
+
+.song-card-detail button {
+  padding: 3px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.duration-input {
+  width: 100px;
+}
+
+.not-found {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.not-found-img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 500px;
+}
+
+@media (max-width: 780px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
 }
